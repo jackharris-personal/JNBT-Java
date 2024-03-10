@@ -2,10 +2,7 @@
 
 [![Maven Build](https://github.com/jackharris-personal/JNBT-Java-Library/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/jackharris-personal/JNBT-Java-Library/actions/workflows/maven.yml)
 
-Jack's Named Binary Tree is a specification, format and java module for efficently saving data to a computer, or sending it over the network! JNBT easily and simply converts its data structure down to the minimal viable bytes to keep file sizes small, whilst providing a robust named map like tree structure to access and manage it programaticly. 
-
-> [!IMPORTANT]
-> JNBT (Jack's Named Binary Tree) is not currently cross compatible with NBT (Notchian). Please see the specifications for full details.
+Jack's Named Binary Tree is a specification, format and java module for efficiently saving data to a computer, or sending it over the network! JNBT easily and simply converts its data structure down to the minimal viable bytes to keep file sizes small, whilst providing a robust named map like tree structure to access and manage it programaticly. 
 
 ## Getting started using JNBT
 
@@ -67,6 +64,9 @@ the key of a child element in the root element.
 
 
 ## Specification
+
+> [!IMPORTANT]
+> JNBT (Jack's Named Binary Tree) is not currently cross compatible with NBT (Notchian). Please see the specifications for full details.
 
 JNBT implements the majority of the notichan NBT specification, the first byte of an entry will specify the type, this will
 be followed by the key length with the key length being an encoded short value stored in 2 bytes. Following this one of two 
