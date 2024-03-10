@@ -1,5 +1,7 @@
 # JNBT - Java Library
 
+[![Maven Build](https://github.com/jackharris-personal/JNBT-Java-Library/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/jackharris-personal/JNBT-Java-Library/actions/workflows/maven.yml)
+
 Jack's Named Binary Tree is a specification, format and java module for efficently saving data to a computer, or sending it over the network! JNBT easily and simply converts its data structure down to the minimal viable bytes to keep file sizes small, whilst providing a robust named map like tree structure to access and manage it programaticly. 
 
 > [!IMPORTANT]
