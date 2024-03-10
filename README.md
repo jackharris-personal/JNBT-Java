@@ -7,6 +7,32 @@ Jack's Named Binary Tree is a specification, format and java module for efficent
 
 ## Specification
 
+JNBT implements the majority of the notichan NBT specification, the first byte of an entry will specify the type, this will
+be followed by the key length with the key length being an encoded short value stored in 2 bytes. Following this one of two 
+cases will be true, for those tags with fixed length payloads the payload will follow, for those values with dynamic payload sizes the
+payload length will follow, followed by the payload itself.
+
+JNBT tags do not require a key and can be key-less (this is forced when an item is stored in a nameless-list) for our fixed payload
+length tags we can calculate the total size in bytes with the following function. (you can consider this the minimum total size)
+
+### Fixed size payloads
+
+* ByteTag
+* ShortTag
+* IntegerTag
+* LongTag
+* FloatTag
+* DoubleTag
+
+### Dynamic size payloads
+
+* ByteArrayTag
+* StringTag
+* CompoundTag
+* IntegerArrayTag
+* FloatArrayTag
+
+
 | ID : 1  (ByteTag)          |        |            |             |         |         |
 |----------------------------|--------|------------|-------------|---------|---------|
 | Size (bytes)               | 1      | 2 (short)  | ? (dynamic) | 1       |
